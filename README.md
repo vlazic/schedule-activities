@@ -1,6 +1,10 @@
 # Schedule Activity App
 
-Simple App for tracking your activities. Check demo here: [https://schedule-activities.vlazic.com/](schedule-activities.vlazic.com)
+Simple App for tracking your activities.
+
+Check demo here: [https://schedule-activities.vlazic.com/](schedule-activities.vlazic.com)
+
+Or watch short video demonstration [./demo.mp4](here).
 
 ## Features
 
