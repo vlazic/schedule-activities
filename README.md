@@ -4,7 +4,7 @@ Simple App for tracking your activities.
 
 Check demo here: [schedule-activities.vlazic.com](https://schedule-activities.vlazic.com/)
 
-Or watch short video demonstration [here](./demo.mp4).
+Or watch short video demonstration [here](https://schedule-activities.vlazic.com/demo.mp4).
 
 ## Features
 
