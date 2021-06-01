@@ -25,7 +25,7 @@ const ScheduleActivity: React.FC = () => {
 
   const [activity, setActivity] = useState<IActivityTypes>("Surfing");
   const [duration, setDuration] = useState<IActivityDurations>(15);
-  const [startTime, setSartTime] = useState<DateTime>();
+  const [startTime, setStartTime] = useState<DateTime>();
   const scheduledActivities = useSelector((state: IState) =>
     getAvailableSlots(state, duration),
   );
@@ -70,7 +70,7 @@ const ScheduleActivity: React.FC = () => {
         label="When do you want to do this activity?"
         options={scheduledActivities}
         type="DateTime"
-        onChange={(value) => setSartTime(DateTime.fromMillis(Number(value)))}
+        onChange={(value) => setStartTime(DateTime.fromMillis(Number(value)))}
       />
 
       <$OrangeButton onClick={dispatchAddActivity} disabled={!startTime}>
