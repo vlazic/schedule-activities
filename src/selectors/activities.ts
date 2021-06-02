@@ -29,11 +29,11 @@ const splitActivitiesPerDays = (activities: IActivity[]): IActivity[][] => {
 export const getActivities = (state: IState) => state.activities;
 
 export const getPastActivities = (state: IState) =>
-  state.activities.filter(
+  getActivities(state).filter(
     (activity) => activity.startTime.toMillis() - new Date().valueOf() < 0,
   );
 export const getScheduledActivities = (state: IState) =>
-  state.activities.filter(
+  getActivities(state).filter(
     (activity) => activity.startTime.toMillis() - new Date().valueOf() >= 0,
   );
 
